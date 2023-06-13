@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      {
+        {
+          const country = ['Indonesian', 'Korea Selatan', 'Japanese', 'Amerika Serikat', 'Rusia', 'Korea Utara', 'Prancis', 'Pakistan', 'Italia', 'India', 'Denmark'];
+
+          for (const count of country) {
+            document.writeln(`<p>${count}</p>`);
+          }
+        }
+
+        {
+          let bilangan = [2, 3, 8, 4, 4];
+          let total = 0;
+          // Membuat perulangan untuk array
+          for (i = 0; i < bilangan.length; i++) {
+            // ini akan mengulang dengan total array di tambah array dengan index sesuai perulangan nya
+            // perulangan ke 0 = 0 + 2
+            // perulangan ke 1 = 2 + 3
+            // perulangan ke 2 = 5 + 8
+            // perulangan ke 3 = 13 + 4
+            // perulangan ke 4 = 17 + 4
+            // perulangan ke 5 yang akan menghasilkan hasil yaitu = 21
+            total += bilangan[i];
+          }
+          alert(total);
+        }
+      }
+
+      
+    </script>
+  </body>
+</html>
